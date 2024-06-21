@@ -1,3 +1,10 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+/* CSS Reset */
+
 *,
 *::before,
 *::after {
@@ -42,4 +49,14 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* ------------------------- */
+
+h1 {
+    font-family: norse-bold;
+}
+
+fieldset {
+    border: none;
 }
