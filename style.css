@@ -84,11 +84,14 @@ fieldset {
   margin-top: 1rem;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 /* Specific */
+
+.col-left {
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: clamp(300px, 35%, 600px);
+}
 
 .col-right {
   padding: 1rem;
