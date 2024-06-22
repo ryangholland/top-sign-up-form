@@ -72,12 +72,9 @@ fieldset {
 
 .row {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .col {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -88,6 +85,10 @@ fieldset {
 
 /* Specific */
 
+.main {
+  width: 100%;
+}
+
 .col-left {
   background-image: url(./images/bg.jpg);
   background-size: cover;
@@ -96,11 +97,13 @@ fieldset {
   justify-content: space-between;
   color: white;
   text-align: center;
+  height: 100vh;
 }
 
 .logo-div {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 18rem;
+  justify-content: center;
 }
 
 .bg-credit {
@@ -119,8 +122,9 @@ fieldset {
 }
 
 .col-right {
-  padding: 1rem;
   justify-content: center;
+  height: 100vh;
+  width: clamp(600px, 65%, 4000px);
 }
 
 .col-right p,
@@ -130,8 +134,53 @@ legend {
   max-width: 620px;
 }
 
+.col-right p,
+.col-right button {
+  margin-left: 2rem;
+}
+
 .form-main {
   background-color: white;
   margin-block: 2rem;
-  padding: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .row {
+  gap: 3rem;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+input {
+  padding: 0.15rem 0.35rem 0.05rem;
+  width: 250px;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #596d48;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.col-right a {
+  color: black;
+  text-decoration: none;
+}
+
+.col-right a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
