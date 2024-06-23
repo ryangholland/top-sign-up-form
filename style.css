@@ -70,6 +70,11 @@ fieldset {
 
 /* Utility */
 
+.container {
+  max-width: 1260px;
+  margin: auto;
+}
+
 .row {
   display: flex;
 }
@@ -183,4 +188,10 @@ button:hover {
 .col-right a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+
+
+input:valid {
+  border-color: green;
 }

@@ -7,64 +7,82 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="row">
-      <div class="col col-left">
-        <div class="logo-div row">
-          <img src="./images/odin-logo.png" alt="#" height="100" />
-          <h1>ODIN</h1>
-        </div>
-        <p class="bg-credit">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
-      </div>
-      <div class="col col-right flow">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
-
-        <form>
-          <div class="form-main flow">
-            <legend>Let's do this!</legend>
-            <fieldset class="row">
-              <div class="col">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" />
-              </div>
-              <div class="col">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" />
-              </div>
-            </fieldset>
-            <fieldset class="row">
-              <div class="col">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-              </div>
-              <div class="col">
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" />
-              </div>
-            </fieldset>
-            <fieldset class="row">
-              <div class="col">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
-              </div>
-              <div class="col">
-                <label for="confirm_password">Confirm Password</label>
-                <input
-                  type="password"
-                  id="confirm_password"
-                  name="confirm_password"
-                />
-              </div>
-            </fieldset>
+    <div class="container">
+      <div class="row">
+        <div class="col col-left">
+          <div class="logo-div row">
+            <img src="./images/odin-logo.png" alt="#" height="100" />
+            <h1>ODIN</h1>
           </div>
-          <button type="submit">Create Account</button>
-        </form>
-
-        <p>Already have an account? <a href="#">Log in</a></p>
+          <p class="bg-credit">
+            Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a>
+          </p>
+        </div>
+        <div class="col col-right flow">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+          <form>
+            <div class="form-main flow">
+              <legend>Let's do this!</legend>
+              <fieldset class="row">
+                <div class="col">
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" id="last_name" name="last_name" required />
+                </div>
+              </fieldset>
+              <fieldset class="row">
+                <div class="col">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="col">
+                  <label for="phone_number">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone_number"
+                    name="phone_number"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset class="row">
+                <div class="col">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    required
+                  />
+                </div>
+              </fieldset>
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </div>
     </div>
   </body>
